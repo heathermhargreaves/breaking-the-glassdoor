@@ -2,7 +2,7 @@
 
 // CONSTANTS
 const PORT = process.env.PORT || 8000;
-const MONGO_URI = process.env.MONGODB_URI || 'mongodb://localhost/YOUR_DB_NAME';
+// const MONGO_URI = process.env.MONGODB_URI || 'mongodb://localhost/YOUR_DB_NAME';
 
 // PACKAGE REQUIRES
 const bodyParser = require('body-parser');
@@ -13,11 +13,13 @@ const path = require('path');
 const webpack = require('webpack');
 const webpackConfig = require('../webpack.config');
 
+var massive = require('massive');
+var connectionString = "postgres://heatherhargreaves@localhost/ladyproblemsdb";
+
 // DB CONNECT
-require('mongoose').connect(MONGO_URI, err => {
-  if(err) throw err;
-  console.log(`MongoDB connected to ${MONGO_URI}`);
-});
+const massiveInstance = massive.connectSync({connectionString : connectionString});
+app.set('db', massiveInstance);
+const db = app.get('db');
 
 // APP DECLARATION
 const app = express();
