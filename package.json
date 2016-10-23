@@ -1,5 +1,5 @@
 {
-  "name": "mern-template",
+  "name": "Shatter",
   "version": "1.0.0",
   "description": "",
   "main": "server/app.js",
@@ -16,6 +16,7 @@
     "bootstrap": "^3.3.7",
     "bootstrap-sass": "^3.3.7",
     "cookie-parser": "^1.4.3",
+    "classnames": "^2.2.5",
     "express": "^4.14.0",
     "font-awesome": "^4.6.3",
     "jquery": "^3.1.0",
@@ -25,7 +26,13 @@
     "react": "^15.3.0",
     "react-bootstrap": "^0.30.2",
     "react-dom": "^15.3.0",
-    "react-router": "^2.6.1"
+    "react-router": "^2.6.1",
+    "react-circular-progressbar": "^0.1.2",
+    "react-tap-event-plugin": "^1.0.0",
+    "semantic-ui-react": "^0.55.1",
+    "webpack": "^1.13.2",
+    "webpack-dev-middleware": "^1.8.3",
+    "webpack-hot-middleware": "^2.12.2"
   },
   "devDependencies": {
     "babel-cli": "^6.11.4",
