@@ -2,8 +2,8 @@ import API from '../API'
 import AppDispatcher from '../AppDispatcher'
 
 const Actions = {
-   getData(){
-
+   getCompany(name){
+     API.getCompany(name)
    },
   sampleActions () {
     API.sampleActions()

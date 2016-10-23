@@ -3,7 +3,7 @@ import ServerAction from './actions/ServerActions'
 
 const API = {
   getCompany(name) {
-    axios.get(`http://localhost:8000/company/${name}`)
+    axios.get(`/company/${name}`)
       .then(res => {
         console.log('res.data', res.data);
         return res.data
@@ -15,6 +15,7 @@ const API = {
         console.log('err:', err)
       })
   },
+  
 
 
 }; //end object

@@ -38,6 +38,7 @@ app.use(require('webpack-hot-middleware')(compiler));
 app.use(morgan('dev'));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+app.use(express.static('public'));
 app.use(cookieParser());
 
 //CONTROLLERS
@@ -79,7 +80,7 @@ app.get('/company/safe-score/:id', score_controller.get_safety_score);
 
 
 app.get('*', (req, res) => {
-  let indexPath = path.join(__dirname, '../build/index.html');
+  let indexPath = path.join(__dirname, './public/index.html');
   res.sendFile(indexPath);
 });
 
