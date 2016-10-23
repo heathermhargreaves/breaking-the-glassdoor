@@ -69,17 +69,6 @@ export default class FeaturedList extends Component {
         {Companies}
         {Companies}
       </Card.Group>
-      {/* <Modal dimmer='blurring' open={open} onClose={this.close}>
-        <Modal.Header>Edit</Modal.Header>
-        <Modal.Content>
-        <UpdateAnimal id= {1}/>
-        </Modal.Content>
-        <Modal.Actions>
-        <Button color='green' onClick={this.close}>
-        Go Back
-        </Button>
-        </Modal.Actions>
-      </Modal> */}
     </Grid>)
   }
 }
