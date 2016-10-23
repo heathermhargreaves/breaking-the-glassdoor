@@ -2,7 +2,7 @@ import React , { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { List,Item, Image, Label, Icon, Card, Grid, Button, Modal, Segment, Statistic } from 'semantic-ui-react'
 import CircularProgressbar from 'react-circular-progressbar'
-import DataStore from '../stores/DataStore'
+import DataStore from '../stores/Store'
 import Actions from '../actions/Actions'
 
 
@@ -17,7 +17,7 @@ export default class FeaturedList extends Component {
 
   componentWillMount () {
     DataStore.startListening(this._onChange);
-    DataActions.getData();
+    Actions.getData();
   }
 
   componentWillUnmount () {

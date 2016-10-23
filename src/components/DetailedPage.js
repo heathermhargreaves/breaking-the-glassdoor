@@ -1,8 +1,8 @@
 import React , { Component } from 'react';
 import ReactDOM from 'react-dom';
 import { List,Item, Image, Label, Icon, Card,Grid,Button,Modal,Dropdown, Progress, Header, Comment} from 'semantic-ui-react'
-import DataStore from '../stores/DataStore'
-import Actions from '../actions/ctions'
+import DataStore from '../stores/Store'
+import Actions from '../actions/Actions'
 import CircularProgressbar from 'react-circular-progressbar'
 
 export default class DetailedPage extends Component {

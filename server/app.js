@@ -13,16 +13,16 @@ const webpack = require('webpack');
 const webpackConfig = require('../webpack.config');
 
 var massive = require('massive');
-var connectionString = "postgres://heatherhargreaves@localhost/ladyproblemsdb";
+// var connectionString = "postgres://heatherhargreaves@localhost/ladyproblemsdb";
 
 
 // APP DECLARATION
 const app =  module.exports = express();
 
 // DB CONNECT
-const massiveInstance = massive.connectSync({connectionString : connectionString});
-app.set('db', massiveInstance);
-const db = app.get('db');
+// const massiveInstance = massive.connectSync({connectionString : connectionString});
+// app.set('db', massiveInstance);
+// const db = app.get('db');
 
 // WEBPACK CONFIG
 const compiler = webpack(webpackConfig);
