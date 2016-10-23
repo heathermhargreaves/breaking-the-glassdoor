@@ -12,7 +12,7 @@ export default class Layout extends Component {
       <div>
         <Menu inverted color='blue' className="menu" stackable>
           <Menu.Item>
-            <img src='./icon.jpg'/>
+            <img src='//dl2.pushbulletusercontent.com/9HE8l6ZBwCBtRJhdu8FEIB7EXIlduZVO/logo2.png'/>
           </Menu.Item>
           <Menu.Item>
             <h1>Breaking the Glassdoor</h1>

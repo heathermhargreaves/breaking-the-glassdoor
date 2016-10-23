@@ -5,6 +5,9 @@ const Actions = {
    getCompany(name){
      API.getCompany(name)
    },
+   getData(){
+
+   },
   sampleActions () {
     API.sampleActions()
   }
